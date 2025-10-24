@@ -15,7 +15,7 @@
 ## Project Setup
 - Inject Webawesome css in the header: `https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/styles/webawesome.css`
 - Inject Webawesome load in the header with `type="module"`: `https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/webawesome.loader.js`
-- Inject custom icon library script: `./js/icon-library.js`
+- Inject custom icon library script with `type="module"`: `./js/icon-library.js`
 - Inject app css `./dist/main.css`
 - Apply `text-20 text-gray-8 font-sans leading-20` to body tag
 - Keep `./src/main.css` intact, add more css files if needed
@@ -35,6 +35,7 @@ This project uses Tailwind CSS v4 with PostCSS configuration. The build process 
 2. Edit files in `./src/` directory or HTML files
 3. CSS automatically rebuilds to `./dist/main.css`
 4. Browser automatically refreshes on any changes
+5. Use 127.0.0.1 instead of localhost to load JS properly
 
 ### Running the Development Server
 Simply run one command for the complete development experience:

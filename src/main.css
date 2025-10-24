@@ -25,14 +25,14 @@
   --color-danger-4: #e32d2d;
   --color-danger-5: #c60d0d;
 
-  --color-gray-1: #f8f9fa;
+  --color-gray-1: #f9fafb;
   --color-gray-2: #f1f3f4;
-  --color-gray-3: #e8eaed;
-  --color-gray-4: #dadce0;
-  --color-gray-5: #9aa0a6;
-  --color-gray-6: #80868b;
+  --color-gray-3: #e7e9ed;
+  --color-gray-4: #ccd2db;
+  --color-gray-5: #98a1b2;
+  --color-gray-6: #8790a4;
   --color-gray-7: #646e82;
-  --color-gray-8: #3c4043;
+  --color-gray-8: #323c4d;
   --color-gray-9: #1d2939;
 
   --spacing-2: 2px;
@@ -66,6 +66,7 @@
   --text-20: 20px;
   --text-23: 23px;
 
+  --line-height-15: 15px;
   --line-height-16: 16px;
   --line-height-20: 20px;
   --line-height-24: 24px;
@@ -76,12 +77,15 @@
 /* Tabulator styles */
 .tabulator {
   font-size: var(--text-13) !important;
-  border: 1px solid var(--color-gray-3) !important;
-  background-color: var(--color-gray-2) !important;
+  border: none !important;
+  border-left: 1px solid var(--color-gray-3) !important;
+  border-bottom: 1px solid var(--color-gray-3) !important;
+  background-color: white !important;
 }
 
 .tabulator .tabulator-header {
   background-color: var(--color-gray-1) !important;
+  border-top: 1px solid var(--color-gray-3) !important;
   border-bottom: 1px solid var(--color-gray-3) !important;
 }
 
@@ -146,16 +150,18 @@
 
   --wa-color-brand-fill-loud: var(--color-primary-4);
   --wa-color-brand-fill-quiet: var(--color-primary-1);
-  --wa-color-brand-fill-normal: var(--color-primary-2);
+  --wa-color-brand-fill-normal: var(--color-primary-1);
   --wa-color-success-fill-loud: var(--color-success-4);
   --wa-color-success-fill-quiet: var(--color-success-1);
-  --wa-color-success-fill-normal: var(--color-success-2);
+  --wa-color-success-fill-normal: var(--color-success-1);
   --wa-color-warning-fill-loud: var(--color-warning-4);
   --wa-color-warning-fill-quiet: var(--color-warning-1);
-  --wa-color-warning-fill-normal: var(--color-warning-2);
+  --wa-color-warning-fill-normal: var(--color-warning-1);
   --wa-color-danger-fill-loud: var(--color-danger-4);
   --wa-color-danger-fill-quiet: var(--color-danger-1);
-  --wa-color-danger-fill-normal: var(--color-danger-2);
+  --wa-color-danger-fill-normal: var(--color-danger-1);
+
+  --wa-color-brand-on-normal: var(--color-primary-5);
 
   --wa-color-neutral-border-loud: var(--color-gray-4);
   --wa-color-neutral-border-quiet: var(--color-gray-2);
@@ -194,4 +200,9 @@ wa-button[size="small"] wa-icon {
 wa-button[size="medium"] wa-icon,
 wa-button[size="large"] wa-icon {
   font-size: 16px;
+}
+
+wa-badge {
+  font-size: var(--text-11);
+  padding: 4px 6px;
 }
