@@ -235,22 +235,6 @@ This project use custom Tailwind set up, please use the correct custom CSS class
 
 #### Icon Usage Methods
 
-**Method 1: Inline src (current approach)**
-```html
-<!-- Basic icon -->
-<wa-icon src="assets/icons/Usersingle.svg"></wa-icon>
-
-<!-- Icon with size -->
-<wa-icon src="assets/icons/Usersingle.svg" style="--size: 1.5rem"></wa-icon>
-
-<!-- Icon in button -->
-<wa-button variant="brand">
-  <wa-icon src="assets/icons/Plus.svg" slot="start"></wa-icon>
-  Add User
-</wa-button>
-```
-
-**Method 2: Custom library (new approach)**
 ```html
 <!-- Basic icon -->
 <wa-icon name="Usersingle" library="Anduin"></wa-icon>
@@ -374,7 +358,7 @@ This project use custom Tailwind set up, please use the correct custom CSS class
 - Tabulator link: https://tabulator.info/
 - Turn off Filter feature by default
 - Turn off Pagination by default
-- If the table has More button, use `EllipsisHorizontal.svg` icon
+- If the table has More button, use `EllipsisHorizontal` icon
 - This project already has customized tabulator in the main.css file, no need to add extra styling
 
 ### Basic Tabulator Setup
@@ -392,8 +376,8 @@ const table = new Tabulator("#example-table", {
     {title: "Email", field: "email", width: 250},
     {title: "Status", field: "status", width: 120},
     {
-      title: "Actions", 
-      width: 100,
+      title: "", 
+      width: 57,
       formatter: function(cell, formatterParams) {
         return `<wa-button appearance="plain">
           <wa-icon name="EllipsisHorizontal" library="Anduin"></wa-icon>
