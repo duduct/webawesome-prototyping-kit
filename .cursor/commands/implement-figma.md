@@ -1,0 +1,1 @@
+Implement the selected Figma frame. Try to match spacing, typo, color.

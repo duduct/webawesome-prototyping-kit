@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template 1 - Data Table Layout</title>
+
+    <!-- Webawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/styles/webawesome.css"
+    />
+
+    <!-- Webawesome Loader -->
+    <script
+      type="module"
+      src="https://early.webawesome.com/webawesome@3.0.0-beta.6/dist/webawesome.loader.js"
+    ></script>
+
+    <!-- Custom Icon Library Registration -->
+    <script type="module" src="../js/icon-library.js"></script>
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="../dist/main.css" />
+
+    <!-- Tabulator CSS -->
+    <link
+      href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"
+    ></script>
+  </head>
+  <body class="text-13 text-gray-8 font-sans leading-20">
+    <div class="bg-white flex flex-col h-full">
+      <!-- Header -->
+      <div
+        class="bg-white border-b border-gray-3 flex items-center justify-between p-16 shrink-0 w-full"
+      >
+        <h3 class="text-17 text-gray-8 leading-28 font-sans font-semibold">
+          Header
+        </h3>
+        <wa-avatar
+          style="--size: 2rem"
+          initials="AB"
+          label="Avatar with initials: AB"
+        ></wa-avatar>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex flex-col gap-24 p-28 shrink-0 w-full">
+        <h2 class="text-20 text-gray-8 leading-32 font-sans font-semibold">
+          Page title
+        </h2>
+
+        <!-- Data Table Section -->
+        <div class="flex flex-col gap-16 shrink-0 w-full">
+          <!-- Toolbar -->
+          <div class="flex items-center justify-between shrink-0 w-full">
+            <!-- Left Actions -->
+            <div class="flex gap-12 items-center shrink-0">
+              <!-- Search Input -->
+              <wa-input placeholder="Search" class="w-full">
+                <wa-icon name="Search" library="Anduin" slot="start"></wa-icon>
+              </wa-input>
+
+              <!-- Filter Button -->
+              <wa-button appearance="outlined">
+                <wa-icon name="Filter" library="Anduin" slot="start"></wa-icon>
+                Filter
+              </wa-button>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex gap-8 items-start shrink-0">
+              <wa-button variant="neutral" appearance="outlined"
+                >Button</wa-button
+              >
+              <wa-button variant="brand">Button</wa-button>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div
+            class="bg-white border border-gray-3 shrink-0 w-full rounded-4 h-full"
+          >
+            <div class="text-center p-16 text-gray-7">Placeholder</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

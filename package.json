@@ -1,0 +1,39 @@
+{
+  "name": "webawesome-prototyping-kit",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build-css": "postcss ./src/main.css -o ./dist/main.css --watch",
+    "build": "postcss ./src/main.css -o ./dist/main.css --minify",
+    "dev": "concurrently \"postcss ./src/main.css -o ./dist/main.css --watch\" \"live-server\"",
+    "serve": "live-server",
+    "postinstall": "npm run build"
+  },
+  "keywords": [
+    "webawesome",
+    "tailwind",
+    "prototyping",
+    "rapid-prototyping",
+    "starter",
+    "template"
+  ],
+  "author": "Duy Luong",
+  "license": "ISC",
+  "description": "A rapid prototyping kit for building web applications with Webawesome components and Tailwind CSS v4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/webawesome-prototyping-kit.git"
+  },
+  "homepage": "https://github.com/your-username/webawesome-prototyping-kit#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/webawesome-prototyping-kit/issues"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^4.1.14"
+  }
+}
